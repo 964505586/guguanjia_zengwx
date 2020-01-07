@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.dfbz.Demo03</groupId>  
+  <artifactId>Demo03</artifactId>  
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!--设置编译环境-->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <!--<plugin>&lt;!&ndash;tomcat插件&ndash;&gt;
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <uriEncoding>utf-8</uriEncoding>
+          <port>8080</port>
+          <path>/ssm</path>
+        </configuration>
+
+      </plugin>-->
+    </plugins>
+  </build>
+
+  <!--
+  ssm依赖：
+  1.mybatis依赖
+  2.spring依赖
+  3.springmvc依赖
+  4.事务依赖
+  -->
+  <dependencies>
+  <dependency><!--mysql-->
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.18</version>
+  </dependency>
+  <dependency><!--druid-->
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid</artifactId>
+    <version>1.1.20</version>
+  </dependency>
+  <dependency><!--mybatis-->
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.5.3</version>
+  </dependency>
+  <dependency><!--spring和mybatis整合-->
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>2.0.3</version>
+  </dependency>
+
+
+  <!--spring、springmvc依赖-->
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.1.RELEASE</version>
+  </dependency>
+  <dependency><!--servlet-->
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+  </dependency>
+  <dependency><!--jsp-->
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>javax.servlet.jsp-api</artifactId>
+    <version>2.3.3</version>
+    <scope>provided</scope>
+  </dependency>
+  <dependency><!--ajax-->
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.10.0</version>
+  </dependency>
+  <dependency><!--aop支持-->
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aspects</artifactId>
+    <version>5.2.1.RELEASE</version>
+  </dependency>
+  <dependency><!--spring整合test-->
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.2.1.RELEASE</version>
+  </dependency>
+
+
+  <!--事务   通过导入spring-orm  对orm整合支持依赖  自动导入事务等-->
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.2.1.RELEASE</version>
+  </dependency>
+
+
+  <!--日志依赖-->
+  <!--<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.12.1</version>
+  </dependency>-->
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>2.12.1</version>
+  </dependency>
+  <dependency><!--juint-->
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+  </dependency>
+  <!--通用mapper
+  实现步骤:
+  1.引入依赖
+  2.修改SqlSessionFactoryBean的配置  ，setConfiguration()需要传入tkmapper的Configuration类
+  3.自定义的mapper接口需要实现tkmapper提供的通用父接口Mapper<T>
+  4.修改实体类需要设置主键标记
+  -->
+  <dependency>
+    <groupId>tk.mybatis</groupId>
+    <artifactId>mapper</artifactId>
+    <version>4.1.5</version>
+  </dependency>
+  <!--分页处理插件
+  1.添加依赖
+  2.修改SqlSessionFactoryBean   添加插件对象
+  3.在需要分页的服务层调用sql之前添加PageHelper.startPage(页码，每页条数)
+  4.通过查询方法返回集合，组装成    new PageInfo(list)对象
+  -->
+  <dependency>
+    <groupId>com.github.pagehelper</groupId>
+    <artifactId>pagehelper</artifactId>
+    <version>5.1.10</version>
+  </dependency>
+
+
+  <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+  <dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.4</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+  <dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.13</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.json/json -->
+  <dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20190722</version>
+  </dependency>
+
+  <dependency>
+    <groupId>com.baidu</groupId>
+    <artifactId>ueditor</artifactId>
+    <version>1.1.2</version>
+  </dependency>
+  </dependencies>
+
+</project>

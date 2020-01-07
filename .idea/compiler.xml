@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Demo01" />
+        <module name="Demo02" />
+        <module name="Demo03" />
+        <module name="jedis_Demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Demo" target="1.5" />
+      <module name="Demo01 (1)" target="1.8" />
+      <module name="demo01 (1)" target="1.5" />
+      <module name="Demo01 (10)" target="1.8" />
+      <module name="Demo01 (2)" target="1.8" />
+      <module name="demo01 (2)" target="1.5" />
+      <module name="demo01 (3)" target="1.5" />
+      <module name="Demo01 (3)" target="1.8" />
+      <module name="Demo01 (4)" target="1.8" />
+      <module name="Demo01 (5)" target="1.8" />
+      <module name="Demo01 (6)" target="1.8" />
+      <module name="Demo01 (7)" target="1.8" />
+      <module name="Demo01 (8)" target="1.8" />
+      <module name="Demo01 (9)" target="1.8" />
+      <module name="Demo02 (1)" target="1.5" />
+      <module name="demo02 (1)" target="1.5" />
+      <module name="Demo02 (10)" target="1.5" />
+      <module name="Demo02 (2)" target="1.5" />
+      <module name="demo02 (2)" target="1.5" />
+      <module name="Demo02 (3)" target="1.5" />
+      <module name="Demo02 (4)" target="1.5" />
+      <module name="Demo02 (5)" target="1.5" />
+      <module name="Demo02 (6)" target="1.5" />
+      <module name="Demo02 (7)" target="1.5" />
+      <module name="Demo02 (8)" target="1.5" />
+      <module name="Demo02 (9)" target="1.5" />
+      <module name="demo03" target="1.5" />
+      <module name="Demo03 (1)" target="1.5" />
+      <module name="Demo03 (2)" target="1.5" />
+      <module name="Demo03 (3)" target="1.5" />
+      <module name="Demo03 (4)" target="1.8" />
+      <module name="Demo03 (5)" target="1.8" />
+      <module name="Demo03 (6)" target="1.8" />
+      <module name="Demo03 (7)" target="1.8" />
+      <module name="Demo03 (8)" target="1.8" />
+      <module name="demo04 (1)" target="1.5" />
+      <module name="demo04 (2)" target="1.8" />
+      <module name="demo05 (1)" target="1.5" />
+      <module name="demo05 (2)" target="1.8" />
+      <module name="demo06" target="1.5" />
+      <module name="demo07" target="1.8" />
+      <module name="demo09" target="1.5" />
+      <module name="demo10 (1)" target="1.5" />
+      <module name="demo10 (2)" target="1.5" />
+      <module name="demo11 (1)" target="1.5" />
+      <module name="demo11 (2)" target="1.5" />
+      <module name="demo8" target="1.8" />
+      <module name="jedis_Demo (1)" target="1.5" />
+      <module name="jedis_Demo (2)" target="1.5" />
+      <module name="jedis_Demo (3)" target="1.5" />
+      <module name="jedis_Demo (4)" target="1.5" />
+      <module name="jedis_Demo (5)" target="1.5" />
+      <module name="spring-01" target="1.5" />
+      <module name="Test01 (1)" target="1.5" />
+      <module name="Test01 (2)" target="1.8" />
+      <module name="Test02" target="1.5" />
+      <module name="Test03" target="1.5" />
+      <module name="Test2" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

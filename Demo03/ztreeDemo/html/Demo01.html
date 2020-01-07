@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入菜单树依赖js，必须先引入jq -->
+    <script src="../js/jquery.js"></script>
+    <!--ztree.all.js=core+excheck+exedit	基本菜单树只需要core.js-->
+    <script src="../js/jquery.ztree.core.js"></script>
+    <script src="../js/vue.js"></script>
+    <!--ztree提供了三种风格样式文件，只需要引入对应风格的css文件，但需要注意该文件对应的img文件夹不能移动位置-->
+    <link rel="stylesheet" href="../css/metroStyle/metroStyle.css">
+    <!--<link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">-->
+</head>
+
+<body>
+
+<div>
+    <div id="treeDiv" style="height: 100px">
+        <input id="" style="width: 100px">
+        <!-- ul用于生成菜单树 注意默认class为ztree -->
+        <ul id="treeDemo" class="ztree"></ul>
+    </div>
+</div>
+
+<script>
+    let vm = new Vue({
+        el:'#treeDiv',
+        data:{
+            setting:{
+                data: {
+                    simpleData:{
+                        enable:true,
+                    }
+                }
+            },
+            nodes:[{"id":1,name:'个人中心',"pId":0, open:true},
+                {"id":2,name:'单位管理',"pId":0},
+                {"id":3,name:'业务管理',"pId":0},
+                {"id":4,name:'我的资料',"pId":1},
+                {"id":5,name:'单位信息',"pId":2},
+                {"id":6,name:'单位账号',"pId":2},
+                {"id":7,name:'电子台账',"pId":2}] 
+        },
+        methods:{
+
+            // 初始化菜单树
+            initTree:function () {
+                //菜单树支持两种结果的节点数组：
+                // 简单数组格式 :[{"id":1,name:'个人中心',"pId":0},
+                // {"id":2,name:'单位管理',"pId":0},
+                // {"id":3,name:'业务管理',"pId":0},
+                // {"id":4,name:'我的资料',"pId":1},
+                // {"id":5,name:'单位信息',"pId":2},
+                // {"id":6,name:'单位账号',"pId":2},
+                // {"id":7,name:'电子台账',"pId":2}]
+
+                // ztree对象的初始化函数 :  init(obj,zSetting,zNodes)
+                // obj:用于挂载树元素的html的dom对象
+                // zSetting:用于配置树的配置对象
+                // zNodes：用于显示的节点集合
+                let treeObj = $.fn.zTree.init($("#treeDemo"), this.setting, this.nodes)
+            },
+        },
+        // 在挂载dom后调用
+        mounted:function () {
+            this.initTree();
+        }
+    })
+</script>
+</body>
+</html>

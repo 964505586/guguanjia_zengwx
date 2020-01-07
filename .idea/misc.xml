@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../Day59/demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day59/demo02" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day59/demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day59/demo04" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day59/demo05" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day60/Test01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day60/Test02" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day60/Test03" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day61/Test01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day63/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day64/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day65/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day66/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day67/Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day68/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day68/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day69/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day69/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day71/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../Day71/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/../guguanjia_Day72/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/../guguanjia_Day72/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/../TestDemo/Demo" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Demo01/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo02/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo03/pom.xml" />
+        <option value="$PROJECT_DIR$/jedis_Demo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
