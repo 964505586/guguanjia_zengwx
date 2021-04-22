@@ -61,7 +61,7 @@ tkmapper提供了自定义的代码生成器插件 ，利用 mybatisGenerator来
         <dependency><!--mybatis-->
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.6</version>
         </dependency>
         <dependency><!--spring和mybatis整合-->
             <groupId>org.mybatis</groupId>
