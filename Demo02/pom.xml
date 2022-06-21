@@ -28,7 +28,7 @@ tkmapper提供了自定义的代码生成器插件 ，利用 mybatisGenerator来
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.35</version>
+                        <version>8.0.28</version>
                     </dependency>
                     <dependency>
                         <groupId>tk.mybatis</groupId>
@@ -51,7 +51,7 @@ tkmapper提供了自定义的代码生成器插件 ，利用 mybatisGenerator来
         <dependency><!--mysql-->
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <version>8.0.28</version>
         </dependency>
         <dependency><!--druid-->
             <groupId>com.alibaba</groupId>
