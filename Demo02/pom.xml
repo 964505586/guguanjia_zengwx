@@ -91,7 +91,7 @@ tkmapper提供了自定义的代码生成器插件 ，利用 mybatisGenerator来
         <dependency><!--ajax-->
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.10.0</version>
+            <version>2.12.6.1</version>
         </dependency>
         <dependency><!--aop支持-->
             <groupId>org.springframework</groupId>
